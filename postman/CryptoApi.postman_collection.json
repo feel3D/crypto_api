@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "57f1d5aa-3fa0-4b68-b722-cc9ae86faf11",
+		"name": "CryptoApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getRateByDateAndCode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rate/?dateStart=2022-02-02 00:00:00&dateEnd=2022-02-02 22:00:00&code=EUR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rate",
+						""
+					],
+					"query": [
+						{
+							"key": "dateStart",
+							"value": "2022-02-02 00:00:00"
+						},
+						{
+							"key": "dateEnd",
+							"value": "2022-02-02 22:00:00"
+						},
+						{
+							"key": "code",
+							"value": "EUR"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getRateByDateAndCode",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/rate/?dateStart=2022-02-02 00:00:00&dateEnd=2022-02-02 22:00:00&code=EUR",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rate",
+								""
+							],
+							"query": [
+								{
+									"key": "dateStart",
+									"value": "2022-02-02 00:00:00"
+								},
+								{
+									"key": "dateEnd",
+									"value": "2022-02-02 22:00:00"
+								},
+								{
+									"key": "code",
+									"value": "EUR"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.20.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.14"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 04 Mar 2022 10:25:14 GMT"
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"price\": 3500.565,\n        \"date\": {\n            \"date\": \"2022-02-02 00:00:00.000000\",\n            \"timezone_type\": 3,\n            \"timezone\": \"UTC\"\n        }\n    },\n    {\n        \"price\": 4000.757,\n        \"date\": {\n            \"date\": \"2022-02-02 01:00:00.000000\",\n            \"timezone_type\": 3,\n            \"timezone\": \"UTC\"\n        }\n    },\n    {\n        \"price\": 4500.434,\n        \"date\": {\n            \"date\": \"2022-02-02 02:00:00.000000\",\n            \"timezone_type\": 3,\n            \"timezone\": \"UTC\"\n        }\n    },\n    {\n        \"price\": 5100.141,\n        \"date\": {\n            \"date\": \"2022-02-02 03:00:00.000000\",\n            \"timezone_type\": 3,\n            \"timezone\": \"UTC\"\n        }\n    },\n    {\n        \"price\": 6200.858,\n        \"date\": {\n            \"date\": \"2022-02-02 04:00:00.000000\",\n            \"timezone_type\": 3,\n            \"timezone\": \"UTC\"\n        }\n    }\n]"
+				}
+			]
+		}
+	]
+}
